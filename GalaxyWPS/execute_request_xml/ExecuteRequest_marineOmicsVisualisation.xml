@@ -1,0 +1,56 @@
+<wps:Execute xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:ows="http://www.opengis.net/ows/2.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    service="WPS" version="2.0.0"
+    xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
+    <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation</ows:Identifier>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:input:new_history_name</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>Marine Omics visualisation</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:input:use_cached_job</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>false</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:input:inputs</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>{}</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:input:parameters</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>{ "0":{ "species":null, "taxon":null, "lat_min":"40.5", "lat_max":"44",
+            "long_min":"6.8", "long_max":"9.0" }, "1":{ "complement":"", "delimiter":"",
+            "cut_type_options|cut_element":"-f", "cut_type_options|list":["1","7","8","44","78"] },
+            "2":{ "colnames":true, "separator":"t", "longitude":"3", "latitude":"2", "species":"4",
+            "records":"5", "type":"0", "resolution":"9" } }</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:input:parameters_normalized</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>{}</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:input:batch</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>true</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:ResponseForm>
+        <wps:ResponseDocument status="true" storeExecuteResponse="true">
+            <wps:Output>
+                <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:output:dataset-collections</ows:Identifier>
+            </wps:Output>
+            <wps:Output>
+                <ows:Identifier>urn:exa:wps:examind::marine:omics:visusalisation:output:dataset</ows:Identifier>
+            </wps:Output>
+        </wps:ResponseDocument>
+    </wps:ResponseForm>
+</wps:Execute>

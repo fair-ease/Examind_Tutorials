@@ -1,7 +1,8 @@
 .idea/*
 t/*
 venv/*
-file.tiff
-file.tiff.aux.xml
-source.tiff
-source.tiff.aux.xml
+openEO/t/*
+openEO/file.tiff
+openEO/file.tiff.aux.xml
+openEO/source.tiff
+openEO/source.tiff.aux.xml

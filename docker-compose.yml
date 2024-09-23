@@ -1,0 +1,47 @@
+version: "2"
+
+services :
+  exa-db:
+    image: postgis/postgis:15-3.3-alpine
+    restart: "no"
+    volumes:
+      - exa-db-volume:/var/lib/postgresql/data/
+    ports:
+      - "5440:5432"
+    environment:
+      POSTGRES_DB: examind
+      POSTGRES_USER: examind
+      POSTGRES_PASSWORD: examind
+      PGDATA: /var/lib/postgresql/data/pgdata/
+
+  examind:
+    image: images.geomatys.com/examind/examind-community:latest
+    #image: tomcat:7-jre8
+    restart: "no"
+    volumes:
+      - "./mount/examind/data/:/var/examind/:Z"
+    depends_on:
+      - exa-db
+    ports:
+      - "8080:8080"
+      - "8000:8000"
+    environment:
+      DATABASE_URL: "postgres://examind:examind@exa-db:5432/examind"
+      EPSG_DATABASE_URL: "postgres://examind:examind@exa-db:5432/examind"
+      CSTL_SECRET: examind-secret
+      SPRING_PROFILES_ACTIVE: standard
+      CSTL_SERVICE_URL: "http://localhost:8080/examind/WS"
+      CSTL_REFRESH_URL: "http://localhost:8080/examind/API/auth/extendToken"
+      CSTL_URL: "http://localhost:8080/examind"
+      CSTL_HOME: /var/examind/
+      # org.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH allow to send value in path with encoded slash
+      # this is needed when some identifiers contains slash, like in STA for example
+      CATALINA_OPTS: "-Xms1G -Xmx4G -Dfile.encoding=UTF-8 -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true"
+      JPDA_ADDRESS: "*:8000"
+      JPDA_TRANSPORT: dt_socket
+      CSTL_TOKEN_LIFE: 30
+      EXAMIND_ENABLE_INTERNAL_SIS_STORE: "true"
+      EXA_CACHE_DATA_INFO: "false"
+    entrypoint: catalina.sh jpda run
+volumes:
+  exa-db-volume:

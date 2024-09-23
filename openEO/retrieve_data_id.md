@@ -6,4 +6,4 @@
 
 3. You will find the id at the bottom right of your screen (see screenshot)
 
-![Web ui - data](./images/id_data.png)
+![Web ui - data](images/id_data.png)

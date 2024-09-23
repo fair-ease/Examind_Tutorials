@@ -1,0 +1,108 @@
+<wps:Execute xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="WPS" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
+    <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters</ows:Identifier>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:input:new_history_name</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>Marine Omics identifying biosnthetic gene clusters</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:input:use_cached_job</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>false</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:input:inputs</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>{
+            "0": {
+                "batch": false,
+                "product": false,
+                "values": [
+                {
+                    "id": "4838ba20a6d8676508817867eb0a2776",
+                    "src": "hda",
+                    "map_over_type": null
+                }
+                ]
+            }}</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:input:parameters</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>{
+            "1": {
+                "input_train": null,
+                "out_format": "gbk",
+                "procedure": "meta",
+                "trans_table": "11",
+                "closed": false,
+                "force_nonsd": false,
+                "masked_seq": false
+            },
+            "2": {
+                "selection|which_sanntis": "genbank"
+            },
+            "3": {
+                "checks_0|pattern": "\\*$",
+                "checks_0|replacement": ""
+            },
+            "4": {
+                "seqtype": "p",
+                "database": "5.59-91.0",
+                "applications": [
+                "TIGRFAM",
+                "FunFam",
+                "SFLD",
+                "SUPERFAMILY",
+                "PANTHER",
+                "Gene3D",
+                "Hamap",
+                "PrositeProfiles",
+                "Coils",
+                "SMART",
+                "CDD",
+                "PRINTS",
+                "PIRSR",
+                "PrositePatterns",
+                "AntiFam",
+                "Pfam",
+                "MobiDBLite",
+                "PIRSF"
+                ],
+                "licensed|use": "false",
+                "pathways": true,
+                "goterms": true,
+                "iprlookup": false,
+                "oformat": "TSV"
+            },
+            "5": {
+                "selection|which_sanntis": "sanntis"
+            }}</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:input:parameters_normalized</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>{}</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:Input>
+        <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:input:batch</ows:Identifier>
+        <wps:Data>
+            <wps:LiteralData>true</wps:LiteralData>
+        </wps:Data>
+    </wps:Input>
+    <wps:ResponseForm>
+        <wps:ResponseDocument status="true" storeExecuteResponse="true">
+            <wps:Output>
+                <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:output:dataset-collections</ows:Identifier>
+            </wps:Output>
+            <wps:Output>
+                <ows:Identifier>urn:exa:wps:examind::marine:omics:biosynthetic:gene:clusters:output:dataset</ows:Identifier>
+            </wps:Output>
+        </wps:ResponseDocument>
+    </wps:ResponseForm>
+</wps:Execute>
