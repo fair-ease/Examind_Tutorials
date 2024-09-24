@@ -2,7 +2,7 @@
 
 This repository contains a list of tutorials on various Examind features.
 
-If you have any questions, please contact :
+If you have any questions, or if you want the latest docker image of Examind Community, please contact :
 - quentin.bialota@geomatys.com
 - dorian.ginane@geomatys.com
 
