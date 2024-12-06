@@ -11,7 +11,7 @@ If you have any questions, or if you want the latest docker image of Examind Com
 ### List of tutorials 
 - **OpenEO** -> [Jupyter notebook with openEO examples](./openEO/openeo_examind_example.ipynb)
   - *Import data* -> [How to import my data in examind ?](./openEO/import_data.md)
-  - *Retrieve data Id* -> [How do you retrieve the id of the data you want to use ?](./openEO/retrieve_data_id.md)
+  - *Retrieve data Id & service Id* -> [How do you retrieve the id of the data you want to use ?](./openEO/retrieve_data_id.md)
 
 
 - **Galaxy Workflows through WPS** -> [Jupyter notebook with some WPS requests for Galaxy workflows](./GalaxyWPS/galaxy_workflows_wps.ipynb)
