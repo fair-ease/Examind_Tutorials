@@ -22,6 +22,14 @@ If you have any questions, or if you want the latest docker image of Examind Com
   - *Tutorial (PDF)* -> [Importing geotiff time series data into Examind Community](./TimeDataAggregation/Importing%20geotiff%20time%20series%20data%20into%20Examind%20Community.pdf)
   - *Video (Italy Soil data aggregation through S3)* -> [Access link](https://nextcloud.geomatys.com/s/jQi6aj2iXXDFkKG)
 
+
+- **Setup WMS, and visualisation in Terriamap**
+  - *Import data* -> [How to import my data in examind ?](./wms-terriamap/import_data.md)
+  - *Style data* -> [How to set a style to my data in examind ?](./wms-terriamap/style_data.md)
+  - *WMS setup* -> [WMS setup example](./wms-terriamap/wms_setup.md)
+  - *Terriamap configuration for Examind WMS* -> [Terriamap configuration example](./wms-terriamap/terriamap_config.md)
+  - *Terriamap setup example* -> [FairEase Terriamap](https://github.com/fair-ease/terria-config)
+
 ---
 
 You also have in this repository :
