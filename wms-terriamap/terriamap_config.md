@@ -3,6 +3,8 @@
 1. Get terriamap, example here : [FairEase Terriamap](https://github.com/fair-ease/terria-config)
 2. In the `config.json` of terriamap, you will have to all the sources of your catalog.
 3. For Examind, here is an example of configuration to add :
+
+If you want to create groups with specific layers of a WMS
 ```json
 {
   "type": "group",
@@ -18,15 +20,30 @@
           "type": "wms",
           "name": "CHL_L3",
           "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-          "layers": "CHL_L3",
-          "colorScaleMinimum": 0.04,
-          "colorScaleMaximum": 0.22
+          "layers": "CHL_L3"
         },
         {
           "type": "wms",
           "name": "CHL_uncertainly_L3",
           "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-          "layers": "CHL_uncertainly_L3"
+          "layers": "CHL_uncertainly_L3",
+          "availableStyles": [
+            {
+              "layerName": "CHL_uncertainly_L3",
+              "styles": [
+                {
+                  "name": "CHL_uncertainty-sld",
+                  "title": "CHL_uncertainty-sld",
+                  "abstract": ""
+                },
+                {
+                  "name": "CHL_uncertainty-sld-bis",
+                  "title": "CHL_uncertainty-sld-bis",
+                  "abstract": ""
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -34,7 +51,9 @@
 }
 ```
 
-OR 
+**OR** 
+
+If you want to have all layers of a WMS
 
 ```json
 {
@@ -50,6 +69,7 @@ OR
 - https://docs.terria.io/guide/connecting-to-data/catalog-type-details/wms/#example-usage
 
 ![terriamap.png](images/terriamap.png)
+![terriamap-layers-style.png](images/terriamap-layers-style.png)
 
 ---
 
