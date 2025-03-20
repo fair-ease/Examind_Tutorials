@@ -51,6 +51,8 @@ If you want to create groups with specific layers of a WMS
 }
 ```
 
+*Note : If you want to add styles to your layers, follow [this tutorial](./style_data.md)*
+
 **OR** 
 
 If you want to have all layers of a WMS
