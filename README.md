@@ -5,12 +5,13 @@ This repository contains a list of tutorials on various Examind features.
 If you have any questions, or if you want the latest docker image of Examind Community, please contact :
 - quentin.bialota@geomatys.com
 - dorian.ginane@geomatys.com
+- pascal.broglie@geomatys.com
 
 ---
 
 ### List of tutorials 
 - **OpenEO**
-  - **OpenEO Jupyter Notebooks** :
+  - *OpenEO Jupyter Notebooks* :
     -  [Notebook with Http requests](./openEO/openeo_examind_http_example.ipynb)
     -  [Notebook with the OpenEO web editor](./openEO/openeo_examind_web_editor_example.ipynb)
     -  [Notebook with the python client](./openEO/openeo_examind_python_client_example.ipynb)
@@ -18,7 +19,12 @@ If you have any questions, or if you want the latest docker image of Examind Com
   - *Retrieve data Id & service Id* -> [How do you retrieve the id of the data you want to use ?](./openEO/retrieve_data_id.md)
 
 
-- **Galaxy Workflows through WPS** -> [Jupyter notebook with some WPS requests for Galaxy workflows](./GalaxyWPS/galaxy_workflows_wps.ipynb)
+- **Run external process via CWL** *(Expose external processes through WPS, Processes, OpenEO using Common Workflow Language)*
+  - *Tutorial with dockerized NDVI process (Jupyter Notebook)* -> [Dockerized NDVI process tutorial with CWL](./CWL/cwl_dockerized_ndvi.ipynb)
+
+
+- **Galaxy Workflows through WPS**
+  - *Example (Jupyter Notebook)* -> [Jupyter notebook with some WPS requests for Galaxy workflows](./GalaxyWPS/galaxy_workflows_wps.ipynb)
   - *Tutorial (PDF)* -> [Deploy and use Galaxy Workflows with Examind WPS](./GalaxyWPS/Deploy%20and%20Use%20Galaxy%20Workflow%20With%20Exa%20WPS.pdf)
 
 

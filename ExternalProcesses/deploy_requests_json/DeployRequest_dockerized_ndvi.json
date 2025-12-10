@@ -1,0 +1,63 @@
+{
+  "processDescription": {
+    "process": {
+      "id": "NDVIMultiSensor",
+      "title": "NDVIMultiSensor",
+      "owsContext": {
+        "offering": {
+          "code": "http://www.opengis.net/eoc/applicationContext/cwl",
+          "content": {
+            "href": "https://raw.githubusercontent.com/Geomatys/Testbed14/master/application-packages/NDVIMultiSensor/NDVIMultiSensor.cwl"
+          }
+        }
+      },
+      "abstract": "Normalized Difference Vegetation Index (NDVI) from an input list of satellite images.",
+      "keywords": ["NDVI"],
+      "inputs": [{
+        "id": "files",
+        "title": "Input Image",
+        "minOccurs": "1",
+        "maxOccurs": "unbounded",
+        "input": {
+          "formats": [{
+            "mimeType": "application/zip",
+            "default": true
+          },
+            {
+              "mimeType": "application/x-hdf"
+            }]
+        },
+        "additionalParameters": [{
+          "role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
+          "parameters": [{
+            "name": "EOImage",
+            "values": ["true"]
+          }]
+        }]
+      }],
+      "outputs": [{
+        "id": "output",
+        "title": "NDVI Images",
+        "output": {
+          "formats": [{
+            "mimeType": "application/octet-stream",
+            "default": true
+
+          }]
+        }
+      }]
+    },
+    "processVersion": "1.0.0",
+    "jobControlOptions": [
+      "async-execute"
+    ],
+    "outputTransmission": [
+      "reference"
+    ]
+  },
+  "immediateDeployment": true,
+  "executionUnit": [{
+    "href": "images.geomatys.com/ndvims:latest"
+  }],
+  "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "urn:exa:wps:examind-dynamic::NDVIMultiSensor",
+  "title": "NDVIMultiSensor",
+  "version": "1.0.0",
+  "jobControlOptions": [
+    "sync-execute",
+    "async-execute",
+    "dismiss"
+  ],
+  "outputTransmission": [
+    "reference",
+    "value"
+  ],
+  "inputs": [
+    {
+      "id": "urn:exa:wps:examind-dynamic::NDVIMultiSensor:input:files",
+      "title": "Input Image",
+      "description": "No description available",
+      "minOccurs": "1",
+      "maxOccurs": "unbounded",
+      "additionalParameters": [
+        {
+          "role": "http://www.opengis.net/eoc/applicationContext/inputMetadata",
+          "parameters": [
+            {
+              "name": "EOImage",
+              "values": [
+                "true"
+              ]
+            }
+          ]
+        }
+      ],
+      "input": {
+        "formats": [
+          {
+            "mimeType": "application/zip",
+            "maximumMegabytes": 100,
+            "default": true
+          },
+          {
+            "mimeType": "application/x-hdf",
+            "maximumMegabytes": 100,
+            "default": false
+          }
+        ]
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "id": "urn:exa:wps:examind-dynamic::NDVIMultiSensor:output:output",
+      "title": "NDVI Images",
+      "output": {
+        "formats": [
+          {
+            "mimeType": "application/octet-stream",
+            "default": true
+          }
+        ]
+      },
+      "abstract": "No description available"
+    }
+  ],
+  "executeEndpoint": "http://localhost:8080/examind/WS/wps/CWL_Tests/processes/urn:exa:wps:examind-dynamic::NDVIMultiSensor/jobs",
+  "abstract": "Normalized Difference Vegetation Index (NDVI) from an input list of satellite images."
+}
