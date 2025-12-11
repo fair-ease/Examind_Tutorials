@@ -20,7 +20,7 @@ If you have any questions, or if you want the latest docker image of Examind Com
 
 
 - **Run external process via CWL** *(Expose external processes through WPS, Processes, OpenEO using Common Workflow Language)*
-  - *Tutorial with dockerized NDVI process (Jupyter Notebook)* -> [Dockerized NDVI process tutorial with CWL](./CWL/cwl_dockerized_ndvi.ipynb)
+  - *Tutorial with dockerized NDVI process (Jupyter Notebook)* -> [Dockerized NDVI process tutorial with CWL](./ExternalProcesses/cwl_dockerized_ndvi.ipynb)
 
 
 - **Galaxy Workflows through WPS**
