@@ -42,7 +42,6 @@
           "formats": [{
             "mimeType": "application/octet-stream",
             "default": true
-
           }]
         }
       }]

@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    {
+      "id": "urn:exa:wps:examind-dynamic::STACDownloader:input:stac_url",
+      "input": {
+        "value": "https://stac-pg-api.ifremer.fr/collections/catds_l3qd"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "id": "urn:exa:wps:examind-dynamic::STACDownloader:output:downloaded_asset",
+      "transmissionMode": "reference"
+    }
+  ]
+}

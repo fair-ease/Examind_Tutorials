@@ -1,0 +1,51 @@
+{
+  "id": "urn:exa:wps:examind-dynamic::STACDownloader",
+  "title": "STAC Downloader",
+  "version": "1.0.0",
+  "jobControlOptions": [
+    "sync-execute",
+    "async-execute",
+    "dismiss"
+  ],
+  "outputTransmission": [
+    "reference",
+    "value"
+  ],
+  "inputs": [
+    {
+      "id": "urn:exa:wps:examind-dynamic::STACDownloader:input:stac_url",
+      "title": "STAC Endpoint URL",
+      "description": "No description available",
+      "minOccurs": "1",
+      "maxOccurs": "1",
+      "input": {
+        "literalDataDomains": [
+          {
+            "anyValue": true,
+            "dataType": {
+              "name": "String",
+              "reference": "http://www.w3.org/TR/xmlschema-2/#string"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "id": "urn:exa:wps:examind-dynamic::STACDownloader:output:downloaded_asset",
+      "title": "Downloaded Asset",
+      "output": {
+        "formats": [
+          {
+            "mimeType": "application/octet-stream",
+            "default": true
+          }
+        ]
+      },
+      "abstract": "No description available"
+    }
+  ],
+  "executeEndpoint": "http://localhost:8080/examind/WS/wps/CWL_Tests/processes/urn:exa:wps:examind-dynamic::STACDownloader/jobs",
+  "abstract": "Downloads the first asset from a given STAC Collection or Item URL."
+}

@@ -1,0 +1,55 @@
+{
+  "processDescription": {
+    "process": {
+      "id": "STACDownloader",
+      "title": "STAC Downloader",
+      "owsContext": {
+        "offering": {
+          "code": "http://www.opengis.net/eoc/applicationContext/cwl",
+          "content": {
+            "href": "file:///home/qbialota/Téléchargements/STACDownloader.cwl"
+          }
+        }
+      },
+      "abstract": "Downloads the first asset from a given STAC Collection or Item URL.",
+      "keywords": ["STAC", "Download", "ETL"],
+      "inputs": [{
+        "id": "stac_url",
+        "title": "STAC Endpoint URL",
+        "minOccurs": "1",
+        "maxOccurs": "1",
+        "input": {
+          "literalDataDomains": [
+            {
+              "dataType": {
+                "name": "string"
+              }
+            }
+          ]
+        }
+      }],
+      "outputs": [{
+        "id": "downloaded_asset",
+        "title": "Downloaded Asset",
+        "output": {
+          "formats": [{
+            "mimeType": "application/octet-stream",
+            "default": true
+          }]
+        }
+      }]
+    },
+    "processVersion": "1.0.0",
+    "jobControlOptions": [
+      "async-execute"
+    ],
+    "outputTransmission": [
+      "reference"
+    ]
+  },
+  "immediateDeployment": true,
+  "executionUnit": [{
+    "href": "images.geomatys.com/stac-downloader:latest"
+  }],
+  "deploymentProfileName": "http://www.opengis.net/profiles/eoc/dockerizedApplication"
+}
