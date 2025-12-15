@@ -1,0 +1,33 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 6bccff9f-ea27-4afe-9aa7-fac5ffc86768
+  title: Examind Tutorials
+  authors:
+    - name: Quentin BIALOTA (Geomatys)
+  toc:
+    - file: README.md
+    - title: OpenEO
+      children:
+        - file: openEO/import_data.md
+        - file: openEO/retrieve_data_id.md
+        - file: openEO/openeo_examind_web_editor_example.ipynb
+        - file: openEO/openeo_examind_python_client_example.ipynb
+        - file: openEO/openeo_examind_http_example.ipynb
+    - title: Galaxy WPS
+      children:
+        - file: GalaxyWPS/galaxy_workflows_wps.ipynb
+    - title: WMS Terriamap
+      children:
+        - file: wms-terriamap/import_data.md
+        - file: wms-terriamap/style_data.md
+        - file: wms-terriamap/wms_setup.md
+        - file: wms-terriamap/terriamap_config.md
+    - title: External Processes
+      children:
+        - file: ExternalProcesses/examind_conf_cwl.md
+        - file: ExternalProcesses/podman_rootless.md
+        - file: ExternalProcesses/cwl_dockerized_ndvi.ipynb
+        - file: ExternalProcesses/cwl_stac_downloader.ipynb
+site:
+  template: book-theme
