@@ -5,6 +5,8 @@ project:
   title: Examind Tutorials
   authors:
     - name: Quentin BIALOTA (Geomatys)
+  exports:
+    - format: pdf
   toc:
     - file: README.md
     - title: OpenEO
@@ -14,10 +16,12 @@ project:
         - file: openEO/openeo_examind_web_editor_example.ipynb
         - file: openEO/openeo_examind_python_client_example.ipynb
         - file: openEO/openeo_examind_http_example.ipynb
+        - file: openEO/resources.md
     - title: Galaxy WPS
       children:
         - file: GalaxyWPS/galaxy_workflows_wps.ipynb
         - file: GalaxyWPS/pdf_deploy_galaxy.md
+        - file: GalaxyWPS/resources.md
     - title: WMS Terriamap
       children:
         - file: wms-terriamap/import_data.md
@@ -29,11 +33,13 @@ project:
       children:
         - file: TimeDataAggregation/index.md
         - file: TimeDataAggregation/video_italy_soil.md
+        - file: TimeDataAggregation/resources.md
     - title: External Processes with CWL
       children:
         - file: ExternalProcesses/examind_conf_cwl.md
         - file: ExternalProcesses/podman_rootless.md
         - file: ExternalProcesses/cwl_dockerized_ndvi.ipynb
         - file: ExternalProcesses/cwl_stac_downloader.ipynb
+        - file: ExternalProcesses/resources.md
 site:
   template: book-theme
