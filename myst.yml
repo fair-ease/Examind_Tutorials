@@ -17,12 +17,16 @@ project:
     - title: Galaxy WPS
       children:
         - file: GalaxyWPS/galaxy_workflows_wps.ipynb
+        - file: GalaxyWPS/pdf_deploy_galaxy.md
     - title: WMS Terriamap
       children:
         - file: wms-terriamap/import_data.md
         - file: wms-terriamap/style_data.md
         - file: wms-terriamap/wms_setup.md
         - file: wms-terriamap/terriamap_config.md
+    - title: Time Data Aggregation
+      children:
+        - file: TimeDataAggregation/index.md
     - title: External Processes
       children:
         - file: ExternalProcesses/examind_conf_cwl.md
