@@ -1,4 +1,6 @@
-## Use Terriamap with Examind WMS
+---
+title: Use Terriamap with Examind WMS
+---
 
 1. Get terriamap, example here : [FairEase Terriamap](https://github.com/fair-ease/terria-config)
 2. In the `config.json` of terriamap, you will have to all the sources of your catalog.
@@ -70,8 +72,16 @@ If you want to have all layers of a WMS
 - https://docs.terria.io/guide/connecting-to-data/catalog-type-details/wms-group/
 - https://docs.terria.io/guide/connecting-to-data/catalog-type-details/wms/#example-usage
 
-![terriamap.png](images/terriamap.png)
-![terriamap-layers-style.png](images/terriamap-layers-style.png)
+```{image} images/terriamap.png
+:alt: terriamap.png
+:width: 100%
+:align: center
+```
+```{image} images/terriamap-layers-style.png
+:alt: terriamap-layers-style.png
+:width: 100%
+:align: center
+```
 
 ---
 

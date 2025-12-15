@@ -1,4 +1,4 @@
-# Examind Tutorials 🌍
+# Welcome to Examind Tutorials 🌍
 
 This repository contains a list of tutorials on various Examind features.
 
@@ -28,11 +28,11 @@ If you have any questions, or if you want the latest docker image of Examind Com
 
 - 🌌 **Galaxy Workflows through WPS**
   - 📙 *Example (Jupyter Notebook)* -> [Jupyter notebook with some WPS requests for Galaxy workflows](./GalaxyWPS/galaxy_workflows_wps.ipynb)
-  - 📄 *Tutorial (PDF)* -> [Deploy and use Galaxy Workflows with Examind WPS](./GalaxyWPS/Deploy%20and%20Use%20Galaxy%20Workflow%20With%20Exa%20WPS.pdf)
+  - 📄 *Tutorial (PDF)* -> [Deploy and use Galaxy Workflows with Examind WPS](./GalaxyWPS/Deploy_and_Use_Galaxy_Workflow_With_Exa_WPS.pdf)
 
 
 - ⏱️ **Time Data Aggregation**
-  - 📄 *Tutorial (PDF)* -> [Importing geotiff time series data into Examind Community](./TimeDataAggregation/Importing%20geotiff%20time%20series%20data%20into%20Examind%20Community.pdf)
+  - 📄 *Tutorial (PDF)* -> [Importing geotiff time series data into Examind Community](./TimeDataAggregation/Importing_geotiff_time_series_data_into_Examind_Community.pdf)
   - 📼 *Video (Italy Soil data aggregation through S3)* -> [Access link](https://nextcloud.geomatys.com/s/jQi6aj2iXXDFkKG)
 
 

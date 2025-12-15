@@ -1,4 +1,6 @@
-# Configure Examind for CWL Processes
+---
+title: Configure Examind for CWL Processes
+---
 
 To run CWL processes in Examind, you need to configure and edit some configuration files, Docker images, and docker compose files.
 
