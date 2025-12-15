@@ -1,0 +1,26 @@
+image: python:3.9
+
+stages:
+  - build
+  - deploy
+
+build_book:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    - jupyter-book build .
+  artifacts:
+    paths:
+      - _build/html
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+pages:
+  stage: deploy
+  script:
+    - mv _build/html public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
