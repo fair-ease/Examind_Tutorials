@@ -6,3 +6,6 @@ openEO/file.tiff
 openEO/file.tiff.aux.xml
 openEO/source.tiff
 openEO/source.tiff.aux.xml
+
+# MyST build outputs
+_build
