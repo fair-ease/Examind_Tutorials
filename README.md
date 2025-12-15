@@ -20,6 +20,8 @@ If you have any questions, or if you want the latest docker image of Examind Com
 
 
 - **Run external process via CWL** *(Expose external processes through WPS, Processes, OpenEO using Common Workflow Language)*
+  - *Pre-configuration of Examind if you use Podman Rootless* -> [Podman Rootless Conf](./ExternalProcesses/podman_rootless.md)
+  - *Configuration of Examind (any cases)* -> [Examind Conf](./ExternalProcesses/examind_conf_cwl.md)
   - *Tutorial with dockerized NDVI process (Jupyter Notebook)* -> [Dockerized NDVI process tutorial with CWL](./ExternalProcesses/cwl_dockerized_ndvi.ipynb)
 
 

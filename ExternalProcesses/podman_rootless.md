@@ -5,7 +5,7 @@ But it should also work in the case of rootless docker.
 
 If you are not rootless, you can skip this document, as it does not apply to you.
 
-### Steps to configure examind for rootless
+### Steps to configure examind for rootless environment
 
 1. Create a `docker` file when you have your `docker-compose.yml`
 2. Write this inside :
@@ -31,6 +31,11 @@ If you are not rootless, you can skip this document, as it does not apply to you
      - "/run/user/5024/podman/podman.sock:/var/run/docker.sock:Z"
      ```
    - In environment :
-      ```yml
+   ```yml
       PATH: "/custom-bin:/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
    ```
+   - And add this argument :
+   ```yml
+    security_opt:
+    - label=disable
+     ```

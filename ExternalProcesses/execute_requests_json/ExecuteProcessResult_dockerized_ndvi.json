@@ -1,0 +1,16 @@
+{
+  "outputs": [
+    {
+      "id": "urn:exa:wps:examind-dynamic::NDVIMultiSensor:output:output",
+      "value": {
+        "href": "http://localhost:8080/examind/WS/wps/CWL_Tests/products/42a9d196-bad8-4672-b11b-0f607cb5ece2-results/82cc5c19-ee39-4051-8e02-6e70c4d21f3f.tif"
+      }
+    },
+    {
+      "id": "urn:exa:wps:examind-dynamic::NDVIMultiSensor:output:output",
+      "value": {
+        "href": "http://localhost:8080/examind/WS/wps/CWL_Tests/products/42a9d196-bad8-4672-b11b-0f607cb5ece2-results/c1bf91df-cd3a-4979-88e2-74652142fc1a.tif"
+      }
+    }
+  ]
+}
