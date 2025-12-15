@@ -1,4 +1,6 @@
-## How to import my data in Examind ?
+---
+title: How to import my data in Examind ?
+---
 
 1. In the Examind **Data** tab, click on **+ Add data**
 2. Then click on **Cloud**, and select the protocol *(If you have put your data in the mount directory of examind, you can use the `Server file` protocol (this will be my case in this tutorial))*

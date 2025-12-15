@@ -1,4 +1,6 @@
-## How to style my data in Examind ?
+---
+title: How to style my data in Examind ?
+---
 
 
 1. You have different ways to add a style. 

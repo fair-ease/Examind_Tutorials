@@ -1,4 +1,6 @@
-## How to import my data in Examind ?
+---
+title: How to import my data in Examind ?
+---
 
 1. In the Examind **Data** tab, click on **+ Add data**
 2. You can select here the way to import your data : from a **local file**, from a **database**, or using a **protocol** (In this tutorial, we will use a **Protocol**)

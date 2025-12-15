@@ -1,4 +1,6 @@
-## WMS Setup Example
+---
+title: WMS Setup Example
+---
 
 1. in **Web services** tab, click on **Create a service**, and click on **Maps (WMS)**
 2. In the form, set a name, a title, and check versions 1.1.1 **AND** 1.3.0
