@@ -24,10 +24,12 @@ project:
         - file: wms-terriamap/style_data.md
         - file: wms-terriamap/wms_setup.md
         - file: wms-terriamap/terriamap_config.md
+        - file: wms-terriamap/terriamap_setup_example.md
     - title: Time Data Aggregation
       children:
         - file: TimeDataAggregation/index.md
-    - title: External Processes
+        - file: TimeDataAggregation/video_italy_soil.md
+    - title: External Processes with CWL
       children:
         - file: ExternalProcesses/examind_conf_cwl.md
         - file: ExternalProcesses/podman_rootless.md
