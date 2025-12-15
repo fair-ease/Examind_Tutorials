@@ -6,6 +6,9 @@ stages:
 
 build_book:
   stage: build
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y nodejs npm
   script:
     - pip install -r requirements.txt
     - jupyter-book build .
